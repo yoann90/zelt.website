@@ -459,22 +459,18 @@ canvas {
   height: 100vh;
   width: 100vw;
   background-color: #fff;
-  /* border: 1px solid green; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .left-page8 {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
-  width: 70%;
-  /* width: 50%; */
+  width: 50%;
   gap: 1rem;
   padding-left: 10rem;
-  /* background-color: red; */
 }
-.left-pag8 > h1 {
+.left-page8 > h1 {
   font-weight: 200;
   font-size: 3rem;
 }
@@ -487,15 +483,58 @@ canvas {
   position: relative;
   height: 100%;
   width: 50%;
-  /* background-color: blue; */
 }
 .right-page8 > img {
   position: absolute;
-  /* left:50%; */
-  left: 35%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
+}
+@media screen and (max-width: 1124px) {
+  .right-page8 {
+    width: 60%;
+    height: 50%;
+  }
+  .left-page8 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .left-page8 > h1 {
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .left-page8 > h4 {
+    width: 50%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 647px) {
+  .left-page8 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .left-page8 > h1 {
+    width: 50%;
+    font-size: 1.5rem;
+    height: 10%;
+  }
+  .left-page8 > h4 {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    width: 70%;
+    height: 30%;
+  }
+  .right-page8 {
+    height: 50%;
+  }
+  .right-page8 > img {
+    top: 25%;
+  }
 }
