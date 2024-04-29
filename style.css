@@ -27,8 +27,6 @@ canvas {
 }
 /* nabvar */
 #nav {
-
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,8 +66,6 @@ canvas {
 /* fin navbar ---*/
 
 #page > h1 {
-
-
   font-size: 6rem;
   position: absolute;
   z-index: 99;
@@ -92,7 +88,7 @@ canvas {
   z-index: 99;
   color: rgb(72, 71, 71);
 }
-@media screen  and (max-width: 1124px) {
+@media screen and (max-width: 1124px) {
   #page > h1 {
     font-size: 3.5rem;
   }
@@ -103,12 +99,9 @@ canvas {
   }
 }
 @media screen and (max-width: 647px) {
- 
   #page > h4 {
     font-size: 1rem;
     top: 58%;
-   
-   
   }
 }
 #page1 {
@@ -118,7 +111,6 @@ canvas {
   background-color: #e5e1dc;
 }
 #page1 > h1 {
-
   font-size: 6rem;
   position: absolute;
   z-index: 99;
@@ -224,13 +216,11 @@ canvas {
   width: 75%;
   background-color: #e5e1dc;
   border-radius: 20px;
-   border: 1px solid green;
   flex-wrap: wrap;
 }
 #left-page5 {
   height: 100%;
   width: 50%;
-  border: 1px solid red;
 }
 #left-page5 > svg {
   scale: 0.7;
@@ -244,7 +234,6 @@ canvas {
   width: 50%;
   gap: 1rem;
   padding-left: 3rem;
-  border: 1px solid rgb(60, 0, 255);
 }
 #right-page5 > h1 {
   font-weight: 200;
@@ -253,7 +242,6 @@ canvas {
 #right-page5 > h4 {
   font-size: 1rem;
   font-weight: 200;
-  /* width: 70%; */
   color: rgb(72, 71, 71);
 }
 #right-page5 > button {
@@ -264,14 +252,14 @@ canvas {
   color: #e5e1dc;
   cursor: pointer;
 }
-@media screen  and (max-width: 1124px) {
-  #left-page5  {
+@media screen and (max-width: 1124px) {
+  #left-page5 {
     width: 100%;
     height: 60%;
   }
-  #right-page5  {
-   display: flex;
-   align-items: center;
+  #right-page5 {
+    display: flex;
+    align-items: center;
     width: 100%;
   }
   #right-page5 > h4 {
@@ -279,12 +267,22 @@ canvas {
   }
 }
 @media screen and (max-width: 647px) {
- 
-  #page > h4 {
-    font-size: 1rem;
-    top: 58%;
-   
-   
+  #left-page5 {
+    width: 100%;
+    height: 50%;
+  }
+  #right-page5 {
+    display: flex;
+    align-items: center;
+    height: 50%;
+  }
+  #right-page5 > h1 {
+    font-size: 2rem;
+  }
+  #right-page5 > h4 {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    width: 70%;
   }
 }
 #page6 {
