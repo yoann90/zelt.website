@@ -198,7 +198,6 @@ canvas {
   }
 }
 #page5 {
-  /* page reponsive a taffé */
   position: relative;
   height: 100vh;
   width: 100%;
@@ -288,21 +287,17 @@ canvas {
 #page6 {
   position: relative;
   display: flex;
-  justify-content: space-around;
   height: 100vh;
   width: 100vw;
   background-color: #fff;
-  /* border: 1px solid green; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 .left-page6 {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
-  width: 70%;
-  /* width: 50%; */
+  width: 50%;
   gap: 1rem;
   padding-left: 10rem;
   /* background-color: red; */
@@ -313,23 +308,61 @@ canvas {
 }
 .left-page6 > h4 {
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 70%;
 }
 .right-page6 {
   position: relative;
-  height: 100%;
   width: 50%;
-  /* background-color: blue; */
 }
 .right-page6 > video {
   position: absolute;
-  /* left:50%; */
-  left: 35%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   height: 100%;
   width: 100%;
+}
+@media screen and (max-width: 1124px) {
+  .right-page6 {
+    width: 100%;
+    height: 40%;
+  }
+  .left-page6 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .left-page6 > h1 {
+    width: 50%;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .left-page6 > h4 {
+    width: 50%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 647px) {
+  .left-page6 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .left-page6 > h1 {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  .left-page6 > h4 {
+    font-size: 0.9rem;
+    padding-bottom: 1rem;
+    width: 70%;
+  }
+  .right-page6 {
+    height: 30%;
+  }
 }
 #page7 {
   position: relative;
