@@ -92,13 +92,23 @@ canvas {
   z-index: 99;
   color: rgb(72, 71, 71);
 }
-@media screen and (max-width: 1120px) {
+@media screen  and (max-width: 1124px) {
   #page > h1 {
     font-size: 3.5rem;
   }
   #page > h4 {
     font-size: 1rem;
+    margin-top: 1rem;
+    top: 50%;
+  }
+}
+@media screen and (max-width: 647px) {
+ 
+  #page > h4 {
+    font-size: 1rem;
     top: 58%;
+   
+   
   }
 }
 #page1 {
