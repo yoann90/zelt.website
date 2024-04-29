@@ -211,12 +211,12 @@ canvas {
   height: 100vh;
   width: 100%;
   background-color: #fff;
-  flex-wrap: wrap;
 }
 #center-page5 {
   position: absolute;
   display: flex;
   /* justify-content: space-evenly; */
+  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -224,11 +224,13 @@ canvas {
   width: 75%;
   background-color: #e5e1dc;
   border-radius: 20px;
+   border: 1px solid green;
   flex-wrap: wrap;
 }
 #left-page5 {
   height: 100%;
   width: 50%;
+  border: 1px solid red;
 }
 #left-page5 > svg {
   scale: 0.7;
@@ -238,10 +240,11 @@ canvas {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   width: 50%;
   gap: 1rem;
   padding-left: 3rem;
+  border: 1px solid rgb(60, 0, 255);
 }
 #right-page5 > h1 {
   font-weight: 200;
@@ -250,7 +253,7 @@ canvas {
 #right-page5 > h4 {
   font-size: 1rem;
   font-weight: 200;
-  width: 70%;
+  /* width: 70%; */
   color: rgb(72, 71, 71);
 }
 #right-page5 > button {
@@ -260,6 +263,29 @@ canvas {
   background-color: black;
   color: #e5e1dc;
   cursor: pointer;
+}
+@media screen  and (max-width: 1124px) {
+  #left-page5  {
+    width: 100%;
+    height: 60%;
+  }
+  #right-page5  {
+   display: flex;
+   align-items: center;
+    width: 100%;
+  }
+  #right-page5 > h4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 647px) {
+ 
+  #page > h4 {
+    font-size: 1rem;
+    top: 58%;
+   
+   
+  }
 }
 #page6 {
   position: relative;
