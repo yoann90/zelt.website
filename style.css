@@ -77,13 +77,13 @@ canvas {
   transition: 0.5s;
 }
 
-
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
-  text-align: center;
+  text-align: start;
   margin-top: 30px;
+  line-height: 3rem;
 }
 
 .overlay a {
@@ -109,10 +109,35 @@ canvas {
 .burger-menu {
   display: none;
 }
-
+.log {
+  display: flex;
+  gap: 2rem;
+  align-items: start;
+  padding-top: 1rem;
+}
+.log .login {
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  background-color: transparent;
+}
+.log .book {
+  border-radius: 10px;
+  padding: 0.5rem 2rem;
+  border: 1px solid #ffcd6d;
+  background-color: #ffcd6d;
+}
+.log .book:hover {
+  background-color: #ffcc6db9;
+  color: black;
+}
 @media screen and (max-height: 450px) {
-  .overlay {padding-top: 15px;}
-  .overlay a {font-size: 20px;}
+  .overlay {
+    padding-top: 15px;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -120,26 +145,22 @@ canvas {
   }
 }
 
-/* Styles for the navigation on large screens */
-
-
-
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   #nav {
-    display: none; 
+    display: none;
   }
 
   .overlay {
     height: 0%;
-    width: 100%; 
+    width: 100%;
   }
 
   .burger-menu {
-    display: block; 
-    position: fixed; 
-    top: 0; 
-    right: 20px; 
-    z-index: 2; 
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 2;
     cursor: pointer;
     color: black;
     font-size: 30px;
@@ -150,16 +171,14 @@ canvas {
   }
 
   .burger-menu + .overlay {
-    transition: 0,5s; 
-    top: 0; 
+    transition: 0, 5s;
+    top: 0;
   }
 
   .overlay-content {
-    margin-top: 0; 
+    margin-top: 0;
   }
 }
-
-
 
 /* fin navbar ---*/
 
