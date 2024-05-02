@@ -63,6 +63,105 @@ canvas {
 
   border-radius: 10px;
 }
+/* try this --- */
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ffcd6d;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.burger-menu {
+  display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {padding-top: 15px;}
+  .overlay a {font-size: 20px;}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Styles for the navigation on large screens */
+
+
+
+@media  screen and (max-width: 1200px) {
+  #nav {
+    display: none; 
+  }
+
+  .overlay {
+    height: 100%; 
+    padding-top: 60px; 
+  }
+
+  .burger-menu {
+    display: block; 
+    position: fixed; 
+    top: 0; 
+    right: 20px; 
+    z-index: 2; 
+    cursor: pointer;
+    color: black;
+    font-size: 30px;
+  }
+
+  .burger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .burger-menu + .overlay {
+    transition: 0,5s; 
+    top: 0; 
+  }
+
+  .overlay-content {
+    margin-top: 0; 
+  }
+}
+
+
+
 /* fin navbar ---*/
 
 #page > h1 {
