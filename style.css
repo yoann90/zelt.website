@@ -66,16 +66,15 @@ canvas {
 /* try this --- */
 
 .overlay {
-  height: 0;
+  height: 0%;
   width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: #fff;
-  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 
@@ -131,8 +130,8 @@ canvas {
   }
 
   .overlay {
-    height: 100%; 
-    padding-top: 60px; 
+    height: 0%;
+    width: 100%; 
   }
 
   .burger-menu {
