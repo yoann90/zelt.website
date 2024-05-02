@@ -242,12 +242,24 @@ ScrollTrigger.create({
   end: `300% top`,
 });
 
+
+
+  const links = document.querySelectorAll(".overlay-content > a, .log > a");
+
+const timeline = gsap.timeline({ paused: true });
+
+timeline.to(links, { autoAlpha: 1, x: 200, stagger: 0.3,duration:0.9},"-=0.2");
+
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
+  document.getElementById("myNav").style.display = "flex";
+  timeline.play();
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
+  timeline.reverse();
+  setTimeout(function() {
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.display = "flex";
+  }, 2500); 
 }
-
-

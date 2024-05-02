@@ -63,7 +63,6 @@ canvas {
 
   border-radius: 10px;
 }
-/* try this --- */
 
 .overlay {
   height: 0%;
@@ -73,7 +72,7 @@ canvas {
   top: 0;
   right: 0;
   background-color: #fff;
-  overflow-y: hidden;
+  overflow-x: hidden;
   transition: 0.5s;
 }
 
@@ -86,6 +85,7 @@ canvas {
   line-height: 3rem;
 }
 
+/* --- */
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -93,6 +93,16 @@ canvas {
   color: black;
   display: block;
   transition: 0.3s;
+}
+/* --- */
+.overlay-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 
 .overlay a:hover,
@@ -105,6 +115,7 @@ canvas {
   top: 20px;
   right: 45px;
   font-size: 60px;
+  cursor: pointer;
 }
 .burger-menu {
   display: none;
