@@ -245,10 +245,11 @@ ScrollTrigger.create({
 
 
   const links = document.querySelectorAll(".overlay-content > a, .log > a");
+  console.log(links);
 
 const timeline = gsap.timeline({ paused: true });
 
-timeline.to(links, { autoAlpha: 1, x: 200, stagger: 0.3,duration:0.9},"-=0.2");
+timeline.to(links, { autoAlpha: 1,x: 50, stagger: 0.4,duration:0.5},"-=0.2");
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
