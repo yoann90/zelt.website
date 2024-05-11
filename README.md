@@ -15,6 +15,7 @@
 <h2 align="center">Aperçu du projet :</h2>
 <br><br>
 
+![Enregistrement de l’écran 2024-05-11 à 21 13 25 (1)](https://github.com/yoann90/zelt.website/assets/135041871/fe756e7d-2ae5-4255-bd77-977089ae58ac)
 
 <img width="1440" alt="Capture d’écran 2024-01-29 à 14 06 00" src="https://github.com/yoann90/zelt.website/assets/135041871/93f19768-43fd-4562-9245-e424f5c03bca">
 
