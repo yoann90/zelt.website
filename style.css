@@ -231,7 +231,17 @@ canvas {
     font-size: 1rem;
     top: 58%;
   }
+  .overlay-content a{
+    font-size: 1rem;
+  }
+  .log .login{
+    padding: 0.2rem 2rem;
+  }
+  .log .book {
+    padding: 0.2rem 2rem;
+  }
 }
+
 #page1 {
   position: relative;
   height: 100vh;
