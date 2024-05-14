@@ -244,23 +244,51 @@ ScrollTrigger.create({
 
 
 
-  const links = document.querySelectorAll(".overlay-content > a, .log > a");
-  console.log(links);
+  // const links = document.querySelectorAll(".overlay-content > a, .log > a");
+  // console.log(links);
 
-const timeline = gsap.timeline({ paused: true });
+// const timeline = gsap.timeline({ paused: true });
 
-timeline.to(links, { autoAlpha: 1,x: 50, stagger: 0.4,duration:0.5},"-=0.2");
+// timeline.to(links, { autoAlpha: 1,x: 50, stagger: 0.4,duration:0.5},"-=0.2");
 
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-  document.getElementById("myNav").style.display = "flex";
-  timeline.play();
-}
+// function openNav() {
+//   document.getElementById("myNav").style.height = "100%";
+//   document.getElementById("myNav").style.display = "flex";
+//   timeline.play();
+// }
 
-function closeNav() {
-  timeline.reverse();
-  setTimeout(function() {
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav").style.display = "flex";
-  }, 2500); 
-}
+// function closeNav() {
+//   timeline.reverse();
+//   setTimeout(function() {
+//     document.getElementById("myNav").style.height = "0%";
+//     document.getElementById("myNav").style.display = "flex";
+//   }, 2500); 
+// }
+
+
+let menu = document.querySelector(".burger-menu ");
+let closeNav = document.querySelector("#full i ");
+
+let to = gsap.timeline();
+to.to("#full", {
+  top: 0,
+  duration: 0.5,
+});
+to.from("#full a", {
+  x: 150,
+  duration: 0.6,
+  stagger: 0.3,
+  opacity: 0,
+});
+to.from("#full i", {
+  opacity: 0,
+});
+to.pause();
+
+menu.addEventListener("click", () => {
+  console.log("irr");
+  to.play();
+});
+closeNav.addEventListener("click", () => {
+  to.reverse();
+});
