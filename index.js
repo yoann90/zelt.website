@@ -275,7 +275,7 @@ to.to("#full", {
   duration: 0.5,
 });
 to.from("#full a", {
-  x: 150,
+  x: -150,
   duration: 0.6,
   stagger: 0.3,
   opacity: 0,
