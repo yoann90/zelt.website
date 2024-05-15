@@ -274,7 +274,7 @@ to.to("#full", {
   top: 0,
   duration: 0.5,
 });
-to.from("#full a", {
+to.from("#full a,hr", {
   x: -150,
   duration: 0.6,
   stagger: 0.3,
@@ -283,6 +283,7 @@ to.from("#full a", {
 to.from("#full i", {
   opacity: 0,
 });
+
 to.pause();
 
 menu.addEventListener("click", () => {
