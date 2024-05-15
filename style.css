@@ -64,7 +64,7 @@ canvas {
   border-radius: 10px;
 }
 
-.overlay {
+/* .overlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -74,28 +74,28 @@ canvas {
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
-}
+} */
 
-.overlay-content {
+/* .overlay-content {
   position: relative;
   top: 15%;
   width: 100%;
   text-align: start;
   margin-top: 30px;
   line-height: 3rem;
-}
+} */
 
 /* --- */
-.overlay a {
+/* .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: black;
   display: block;
   transition: 0.5s;
-}
+} */
 /* --- */
-.overlay-content a {
+/* .overlay-content a {
   color: black;
   text-decoration: none;
   display: block;
@@ -103,20 +103,20 @@ canvas {
   font-size: 2rem;
   opacity: 0;
   transform: translateX(-150px);
-}
+} */
 
-#full  a:hover,
-#full  a:focus {
+#full a:hover,
+#full a:focus {
   color: #ffcd6d;
 }
 
-.overlay .closebtn {
+/* .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
   cursor: pointer;
-}
+} */
 .burger-menu {
   display: none;
 }
@@ -143,7 +143,6 @@ canvas {
   color: black;
 }
 
-
 #full {
   height: 100%;
   width: 100%;
@@ -151,14 +150,12 @@ canvas {
   background-color: #fff;
   top: -100%;
 
-z-index: 10;
+  z-index: 10;
   left: 0%;
 
   padding: 5rem 2rem;
 }
 #full a {
- 
-
   color: black;
   text-decoration: none;
   display: block;
@@ -172,24 +169,35 @@ z-index: 10;
   font-size: 2rem;
   font-weight: 500;
   color: black;
-  background-color: white;
+  background-color: #ffcd6d;
   border-radius: 50%;
   padding: 0.2rem;
   cursor: pointer;
 }
-
+#full i:hover{
+  color: white;
+}
 
 @media screen and (max-height: 450px) {
-  .overlay {
+  /* .overlay {
     padding-top: 15px;
   }
   .overlay a {
     font-size: 20px;
-  }
+  } */
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  #full a {
+    font-size: 1rem;
+  }
+  .log .login {
+    padding: 0.2rem 2rem;
+  }
+  .log .book {
+    padding: 0.2rem 0.2rem;
   }
 }
 
@@ -197,11 +205,6 @@ z-index: 10;
   #nav {
     display: none;
   }
-
-  /* .overlay {
-    height: 0%;
-    width: 100%;
-  } */
 
   .burger-menu {
     display: block;
@@ -217,15 +220,6 @@ z-index: 10;
   .burger-menu:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
-
-  /* .burger-menu + .overlay {
-    transition: 0.5s;
-    top: 0;
-  } */
-
-  /* .overlay-content {
-    margin-top: 0;
-  } */
 }
 
 /* fin navbar ---*/
@@ -268,10 +262,10 @@ z-index: 10;
     font-size: 1rem;
     top: 58%;
   }
-  #full  a{
+  #full a {
     font-size: 1.5rem;
   }
-  .log .login{
+  .log .login {
     padding: 0.2rem 2rem;
   }
   .log .book {
